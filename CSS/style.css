@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+
+/**************************************
+===== h1,h2,h3,h4,h5,h6 font size  ====
+**************************************/
+h1{
+
+}
+h2{
+
+}
+h3{
+ font-size: 40px;
+}
+h4{
+ font-size: 30px;
+}
+h5{
+
+}
+h6{
+  font-size: 15px;
+}
+
+small{
+  font-size: 12px;
+}
+
+/**************************************
+= end of h1,h2,h3,h4,h5,h6 font size  =
+**************************************/
+
+
+/*************************
+                           Top Header Start 
+**************************/
+
+.topHeader {
+  background-color: #380E86;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.iconSize {
+  line-height: 1.5 !important;
+}
+
+.br::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1.4px;
+  height: 50px;
+  background: #7236E2;
+}
+
+/* Language Button toggle start */
+
+.switch {
+  position: relative;
+}
+
+.switch>span {
+  position: absolute;
+  top: 2px;
+  pointer-events: none;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 6%);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked~.off {
+  color: #fff;
+}
+
+input.check-toggle-round-flat:checked~.on {
+  color: #380E86;
+}
+
+.switch>span.on {
+  left: 0;
+  color: #fff;
+}
+
+.switch>span.off {
+  right: 0;
+  color: #380E86;
+}
+
+.check-toggle {
+  position: absolute;
+  visibility: hidden;
+}
+
+.check-toggle+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat+label {
+  width: 61px;
+  height: 22px;
+  background-color: white;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat+label:before,
+input.check-toggle-round-flat+label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat+label:after {
+  top: 0px;
+  bottom: 0px;
+  width: 32px;
+  background-color: #6C63FF;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 50px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked+label:after {
+  margin-left: 30px;
+}
+
+
+/* Language Button toggle end */
+
+
+/* Top Header End */
+/* Middle Header Start*/
+.middleHeader {
+  height: 76px;
+  display: flex;
+  align-items: center;
+}
+
+.middleHeader-content .btn1 {
+  background-color: #F2F2F2;
+  color: #380E86;
+}
+
+.middleHeader-content .btn2 {
+  background-color: white;
+  color: #380E86;
+}
+
+.btn3 {
+  background-color: #380E86;
+  color: white;
+}
+/* Middle Header End*/
+/* Bottom Header Start */
+.bottomHeader {
+  background-color: #F2F2F2;
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.tex {
+  /* width: 100%; */
+  /* position: absolute; */
+  font-size: 20px;
+  color: #380E86 !important;
+  padding: 9.5% 14%;
+  background-color: rgb(255, 255, 255);
+}
+.mr {
+  margin-left: 11em;
+}
+/* Bottom Header End */
+
+/***************************************
+============Home Top Banner=============
+***************************************/
+.homeTopBanner{
+  background-image: url(../Assets/Images/HomeBody/1HomeTopBg.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 637px;
+  width: 100%;
+}
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom .active{
+  background-color: #380E86;
+}
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom .active small{
+  color: white;
+}
+
+
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1{
+    background-color: white;
+    width: 121px;
+    height: 125px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover{
+  background-color: #380E86;
+  transition: 0.5s ease-out;
+}
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1 small{
+  color: #380E86;
+}
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover small{
+  color: white;
+}
+
+/***************************************
+=========End of Home Top Banner=========
+***************************************/
+
+/***************************************
+=========Home Top Banner Bottom=========
+***************************************/
+
+
+.homeTopBannerBottom{
+  height: 162px;
+  box-shadow: 0px 13px 12px 4px #FBFCFF;
+}
+
+.homeTopBannerBottomContentImg{
+  margin-right: 10px;
+}
+.homeTopBannerBottomContentText{
+  line-height: 15px;
+}
+.homeTopBannerBottomContentText h6{
+  font-weight: bold;
+}
+
+/***************************************
+=======End Of Home Top Banner Bottom====
+***************************************/
+
+
+/***************************************
+=========Home Popular Catagory=========
+***************************************/
+.homePopularCatagoryHeading h4{
+  color: #380E86;
+  font-weight: bold;
+}
+.homePopularCatagoryHeading a{
+  text-decoration: none;
+  color: #380E86;
+}
+.homePopularCatagoryContent{
+  height: 97px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 10px #E9EDF3;
+  border-radius: 7px;
+  cursor: pointer;
+  /* transition: 7.5s ease; */
+}
+
+.homePopularCatagoryContent:hover{
+  border: 0.5px solid #8DB3DF;
+  box-sizing: border-box;
+  /* transition: 7.5s ease; */
+}
+.homePopularCatagoryContentText h6{
+  color: #380E86;
+}
+.homePopularCatagoryContentText small{
+  color: #95A0B0;
+}
