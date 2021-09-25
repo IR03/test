@@ -24,14 +24,29 @@ h4{
  font-size: 30px;
 }
 h5{
-
+ font-size: 24px;
 }
 h6{
   font-size: 15px;
+  font-weight: 500;
 }
 
 small{
   font-size: 12px;
+}
+
+/* Color Code */ 
+.color-yellow {
+  color: #FBC56D;
+}
+.color-grey {
+  color:#a3adc0;
+}
+.color-green {
+  color:#78C2A4;
+}
+.color-white {
+  color:white;
 }
 
 /**************************************
@@ -237,6 +252,9 @@ input.check-toggle-round-flat:checked+label:after {
 .homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover small{
   color: white;
 }
+.homeTopBannerImage img{
+  width: 100%;
+}
 
 /***************************************
 =========End of Home Top Banner=========
@@ -297,4 +315,275 @@ input.check-toggle-round-flat:checked+label:after {
 }
 .homePopularCatagoryContentText small{
   color: #95A0B0;
+}
+
+/* 25/09 */
+/*************
+=========Home Popular Courses=========
+*************/
+.popularCourses {
+  background-color: #E6F3FF;
+}
+/* Owl Carousel */
+
+.owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -60px 28px !important;
+  font-size: 26px !important;
+}
+
+/* Click icon-color-change */
+.click-icon{
+  position: absolute; 
+  font-size: 30px; 
+}
+
+.card-height {
+  height : 380px;
+  border: 0 !important;
+}
+.card-height img{
+  height:213px;
+}
+.card-body-height {
+  height: 167px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+/* Home Popular Courses End */
+
+/**********************************************
+================Home Featured Books===========
+**********************************************/
+
+.homeFeaturedCard{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.homeFeaturedBooksHeadingRight a{
+  text-decoration: none;
+  color: #380E86;
+}
+.homeFeaturedCardTag a{
+  text-decoration: none;
+  color: #380E86;
+  background-color: #D4D1FF;
+  font-size: 9px;
+  font-weight: 300;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+.homeFeaturedCard p{
+  font-size: 10px;
+  color: #380E86;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.homeFeaturedCardButtonLeft{
+  width: 153px;
+  height: 35px;
+  background-color: #380E86;
+  border-radius: 5px;
+}
+.homeFeaturedCardButtonLeft a{
+  color: white;
+  font-size: 12px;
+}
+.homeFeaturedCardButtonLeft a:hover{
+  color: white;
+}
+
+.homeFeaturedCardButtonRight span{
+  color: #BFBFBF;
+  font-size: 10px;
+  font-weight: 400;
+}
+.homeFeaturedCardButtonRight strike{
+  color: #FE3745;
+}
+.homeFeaturedCardButtonRight h6{
+  font-size: 16px;
+  color: #380E86;
+  font-weight: 500;
+}
+
+.homeFeaturedCard::before{
+  content: '50%';
+  position: absolute;
+  top: 10%;
+  width: 61px;
+  height: 44px;
+  background-color: #380E86;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/****************************************
+=========Register Today=================
+***************************************/
+.homeRegisterToday{
+  height: 70vh; 
+  background-image: url(../Assets/Images/HomeBody/10Banner.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.homeRegisterTodayContent {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+.homeRegisterTodayContent h3{
+  font-size: 36px;
+  color: #FFFF;
+  font-weight: 600;
+}
+.homeRegisterTodayContent span{
+  font-size: 36px;
+  color: #ECBE6B;
+  font-weight: 600;
+}
+.homeRegisterTodayContent p{
+  color: #FFFF;
+  font-weight: 300;
+}
+.homeRegisterTodayContent button{
+  width: 181px;
+  height: 45px;
+  background-color: #FFD00D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/****************************************
+=============Instructor=================
+***************************************/
+
+.homeInstructorContent h5{
+  font-size: 24px;
+  font-weight: 600;
+}
+.homeInstructorContent p{
+  color: #858b9f;
+  font-size: 16px;
+  font-weight: 300;
+}
+.homeInstructorContent button{
+  width: 195px;
+  height: 45px;
+  background-color: #380E86;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/****************************************
+=============Download App================
+***************************************/
+.homeDownloadApp{
+  height: 80vh;
+  background-image: url(../Assets/Images/HomeBody/12logo3.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.homeDownloadAppContent{
+  position: absolute;
+  top: 25%;
+}
+
+.homeDownloadAppContent span{
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.homeDownloadAppContent h3{
+  color: #ffff;
+  font-size: 48px;
+  font-weight: 600;
+}
+.homeDownloadAppContent p{
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+.downloadAppContentIcon{
+  height: 54px;
+  width: 178px;
+  background-color: #000;
+  border-radius: 5px;
+}
+.downloadAppContentIcon a{
+  text-decoration: none;
+}
+.downloadAppContentIcon p{
+  font-size: 16px;
+  color: #ffff;
+  font-weight: 500;
+  line-height: 15px;
+}
+.downloadAppContentIcon span{
+  font-size: 12px;
+  color: #858b9f;
+  font-weight: 300;
+}
+
+/****************************************
+=============Subscribe================
+***************************************/
+.homeSubscribe{
+  background-color: #F8F8FF;
+  padding: 80px 0;
+}
+.homeSubscribeImg{
+  position: relative;
+}
+.homeSubscribeImg img{
+  width: 100%;
+}
+.homeSubscribeContent{
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.homeSubscribeContentButton {
+  display: inline-block;
+  position: relative;
+}
+.homeSubscribeContentButton button {
+  background-color: #ffff;
+  color: #380E86;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position:absolute;
+  right: 0;
+  top: 0;
+  bottom:0;
+  width: 147px;
+  height: 45px;
+}
+.homeSubscribeContentButton input {
+  width: 445px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: #7C6DE4;
+  border-radius: 10px;
+  color: #ffff;
+  padding: .5em 3.5em .5em .5em;
+}
+::-webkit-input-placeholder{
+  color: white;
+  font-weight: 200;
 }
