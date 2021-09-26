@@ -24,7 +24,7 @@ h4{
  font-size: 30px;
 }
 h5{
- font-size: 24px;
+ /* font-size: 24px; */
 }
 h6{
   font-size: 15px;
@@ -48,6 +48,9 @@ small{
 .color-white {
   color:white;
 }
+.color-span{
+  color: #95A0B0;
+}
 
 /**************************************
 = end of h1,h2,h3,h4,h5,h6 font size  =
@@ -55,7 +58,7 @@ small{
 
 
 /*************************
-                           Top Header Start 
+      Top Header Start 
 **************************/
 
 .topHeader {
@@ -74,8 +77,9 @@ small{
   content: "";
   position: absolute;
   top: 0;
-  width: 1.4px;
+  width: 1px;
   height: 50px;
+  opacity: 0.5;
   background: #7236E2;
 }
 
@@ -168,7 +172,6 @@ input.check-toggle-round-flat:checked+label:after {
   margin-left: 30px;
 }
 
-
 /* Language Button toggle end */
 
 
@@ -194,6 +197,10 @@ input.check-toggle-round-flat:checked+label:after {
   background-color: #380E86;
   color: white;
 }
+.btn3:hover{
+  background-color: #380E86;
+  color: white;
+}
 /* Middle Header End*/
 /* Bottom Header Start */
 .bottomHeader {
@@ -213,6 +220,24 @@ input.check-toggle-round-flat:checked+label:after {
 }
 .mr {
   margin-left: 11em;
+}
+.dot::after{
+  content: '';
+  position: absolute;
+  background-color: #FF543E;
+  padding: 3px 3px;
+  border-radius: 50%;
+}
+.nav-cart::after{
+  content: '7';
+  position: absolute;
+  top: 10%;
+  right: 0;
+  font-size: 7px;
+  background-color: #FF543E;
+  color: #FFF;
+  padding: 2px 5px;
+  border-radius: 50%;
 }
 /* Bottom Header End */
 
@@ -306,15 +331,12 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 .homePopularCatagoryContent:hover{
-  border: 0.5px solid #8DB3DF;
+  outline: 0.5px solid #8DB3DF;
   box-sizing: border-box;
   /* transition: 7.5s ease; */
 }
 .homePopularCatagoryContentText h6{
   color: #380E86;
-}
-.homePopularCatagoryContentText small{
-  color: #95A0B0;
 }
 
 /* 25/09 */
@@ -339,9 +361,7 @@ input.check-toggle-round-flat:checked+label:after {
   position: absolute; 
   font-size: 30px; 
 }
-
-.card-height {
-  height : 380px;
+.card-height .card{
   border: 0 !important;
 }
 .card-height img{
@@ -352,7 +372,27 @@ input.check-toggle-round-flat:checked+label:after {
   border: 1px solid rgba(0,0,0,.125);
 }
 
-/* Home Popular Courses End */
+@media (min-width:365px) and (max-width:700px){ 
+  .card-height {
+    height : 100% !important;
+    width: 100% !important;
+  }
+  .card-body-height {
+    height: 100% !important;
+  }
+}
+@media (min-width:701px) and (max-width:1300px){ 
+  .card-height {
+    width : 350px;
+  }
+}
+@media (min-width:1301px) and (max-width:3000px){ 
+  .card-height {
+    height : 380px;
+    width: 390px;
+  }
+}
+ /* Home Popular Courses End  */
 
 /**********************************************
 ================Home Featured Books===========
@@ -426,11 +466,76 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 /****************************************
+==============Whats New=================
+***************************************/
+.homeWhatsNew{
+  width: 100%;
+
+}
+.homeWhatsNewcarousel{
+  /* max-width: 1200px; */
+  /* margin: auto; */
+  left: 16%;
+}
+.owl-dots{
+  margin-left: 500px;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 5px;
+  width: 66px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #380E86!important;
+  background: #EFF5FF !important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #380E86!important;
+}
+
+/* Home Featured topics by category start*/
+.featuredTopics{
+  background-color: #E6F3FF;
+ }
+ .nav-tabs{
+   border: 0 !important;
+ }
+ .nav-link{
+   color: #858B9F !important;
+   border: 0 !important;
+ }
+ .nav-tabs .nav-link.active  {
+   background-color: #380E86 !important;
+   color: white !important;
+ }
+ .topics-img-height{
+  height:153px;
+ }
+ .topics-img-height img{
+  height: 100%;
+  width: 100%;
+}
+.topics-body-height{
+  height:100px;
+ }
+.topics-body-height a{
+  font-size: 10px;
+  font-weight: 600;
+  color: #380E86;
+  text-decoration: none;
+}
+
+/****************************************
 =========Register Today=================
 ***************************************/
 .homeRegisterToday{
   height: 70vh; 
   background-image: url(../Assets/Images/HomeBody/10Banner.png);
+  background-color: #E6F3FF;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -462,7 +567,37 @@ input.check-toggle-round-flat:checked+label:after {
   border: none;
   border-radius: 5px;
 }
+/* Top rated teacher start*/
 
+.topRatedTeacherSlider .card{
+  border: none !important;
+}
+.topRatedTeacherSlider .card-body{
+  border: 1px solid rgb(139, 168, 221);
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: #F9F9F9;
+}
+.topRatedTeacherSlider .card-body .margin-top-minus{
+  margin-top: -20%;
+}
+.topRatedTeacherSlider .col-lg-12{
+  width: 95% !important;
+}
+
+.slick-prev::before,.slick-next::before{
+  color: grey !important;
+  font-size: 30px !important;
+}
+.slick-prev{
+  top: 57% !important;
+ left: -1.4% !important;
+ z-index: 9999;
+}
+.slick-next{
+  top: 57% !important;
+  right: 9px !important;
+}
 /****************************************
 =============Instructor=================
 ***************************************/
@@ -586,4 +721,40 @@ input.check-toggle-round-flat:checked+label:after {
 ::-webkit-input-placeholder{
   color: white;
   font-weight: 200;
+}
+
+
+/****************************************
+===============Footer==================
+***************************************/
+.footer{
+  background-color: #252C41;
+  padding: 50px 0;
+}
+.footerHeading{
+font-size: 18px;
+font-weight: 400;
+color: #ffff;
+}
+.footerContent{
+font-size: 13px;
+font-weight: 300;
+color: #858B9F;
+}
+.footerContent a{
+  text-decoration: none;
+  color: #858B9F;
+}
+.footerContentFiveApp i{
+  color: #6C63FF;
+}
+.CopyRight{
+  background-color: #1B2132;
+  padding: 20px 0;
+}
+.copyRightContentLeft{
+  color: #858B9F;
+}
+.copyRightContentRight a{
+  color: #858B9F;
 }
